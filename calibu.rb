@@ -20,7 +20,7 @@ class Calibu < Formula
   depends_on "ceres-solver"
 
   def install
-
+    cmake_args = std_cmake_args
 
     if build.with? "matlab"
       cmake_args << "-DBUILD_MATLAB=ON"
@@ -28,7 +28,7 @@ class Calibu < Formula
       cmake_args << "-DBUILD_MATLAB=OFF"
     end
     
-    system "cmake", ".", *std_cmake_args, "-DCMAKE_BUILD_TYPE=Release"
+    system "cmake", ".", *cmake_args, "-DCMAKE_BUILD_TYPE=Release"
     system "make"
     system "make", "install"
   end
