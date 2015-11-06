@@ -15,7 +15,7 @@ class CeresSolver < Formula
 
   option 'without-tests', 'Do not build and run the tests (not recommended).'
 
-  depends_on "homebrew/versions/cmake28" => :build
+  depends_on "cmake" => :build
   
   depends_on 'glog'
   depends_on 'gflags'
