@@ -15,7 +15,8 @@ class Hal < Formula
   depends_on "homebrew/science/openni"
   depends_on "homebrew/science/openni2"
   depends_on "sophus"
-  depends_on "opencv"
+  depends_on "opencv3" => :recommended
+  depends_on "opencv"  => :optional
   depends_on "calibu"
   depends_on "nodecom"
   depends_on "pangolin"

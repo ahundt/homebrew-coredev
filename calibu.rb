@@ -16,7 +16,8 @@ class Calibu < Formula
   depends_on "eigen"
   depends_on "cvars"
   depends_on "sophus"
-  depends_on "opencv"
+  depends_on "opencv3" => :recommended
+  depends_on "opencv"  => :optional
   depends_on "ceres-solver"
 
   def install
