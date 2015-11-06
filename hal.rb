@@ -17,7 +17,7 @@ class Hal < Formula
   depends_on "sophus"
   depends_on "opencv"
   depends_on "calibu"
-  depends_on "arpg/coredev/node"
+  depends_on "nodecom"
   depends_on "pangolin"
 
   def install

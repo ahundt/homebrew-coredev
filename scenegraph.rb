@@ -17,7 +17,7 @@ class Scenegraph < Formula
   depends_on "assimp"
   depends_on "pangolin"
   depends_on "devil"
-  depends_on "arpg/coredev/bullet"
+  depends_on "bullet"
 #  depends_on "osxglut"
 
   def install

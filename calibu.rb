@@ -16,7 +16,7 @@ class Calibu < Formula
   depends_on "cvars"
   depends_on "sophus"
   depends_on "opencv"
-  depends_on "arpg/coredev/ceres-solver"
+  depends_on "ceres-solver"
 
   def install
     system "cmake", ".", *std_cmake_args, "-DCMAKE_BUILD_TYPE=Release"
