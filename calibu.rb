@@ -10,6 +10,7 @@ class Calibu < Formula
 
   depends_on "cmake" => :build 
 
+  option "with-matlab","build library with matlab dependencies enabled"
   depends_on "gflags"
   depends_on "glog"
   depends_on "eigen"
@@ -19,6 +20,14 @@ class Calibu < Formula
   depends_on "ceres-solver"
 
   def install
+
+
+    if build.with? "matlab"
+      cmake_args << "-DBUILD_MATLAB=ON"
+    else
+      cmake_args << "-DBUILD_MATLAB=OFF"
+    end
+    
     system "cmake", ".", *std_cmake_args, "-DCMAKE_BUILD_TYPE=Release"
     system "make"
     system "make", "install"
