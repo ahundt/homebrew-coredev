@@ -9,7 +9,7 @@ class Scenegraph < Formula
   head "https://github.com/arpg/SceneGraph.git", :branch => "master"
 
 
-  depends_on "homebrew/versions/cmake28" => :build
+  depends_on "cmake" => :build
 
   depends_on "eigen"
   depends_on "glew"

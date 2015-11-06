@@ -4,7 +4,7 @@ class Osxglut < Formula
 #  sha1 "ea9b151ac9f0afd584a2680db77bd4828ef99357"
   head "https://github.com/stevenlovegrove/osxglut.git", :branch => "master"
 
-  depends_on "homebrew/versions/cmake28" => :build
+  depends_on "cmake" => :build
 
   def install
     system "xcodebuild", "install"
