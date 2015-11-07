@@ -4,8 +4,8 @@
 
 class Hal < Formula
   homepage "https://github.com/arpg/hal"
-  head "https://github.com/arpg/HAL.git", :branch => "master"
-  ahundt "https://github.com/ahundt/HAL.git", :branch => "master"
+  #head "https://github.com/arpg/HAL.git", :branch => "master"
+  head "https://github.com/ahundt/HAL.git", :branch => "master"
 
   depends_on "cmake" => :build
 
